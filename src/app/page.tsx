@@ -27,8 +27,6 @@ export default function Home() {
         </div>
       </div>
       
-      
-      
       <main className="flex flex-col row-start-2 justify-center items-center">
         <ProfilePicture />
         

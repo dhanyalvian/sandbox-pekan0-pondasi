@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-export default function LinkList(params: any) {
+interface Args {
+  darkMode: boolean;
+}
+
+export default function LinkList(params: Args) {
   const links = [
     { label: 'GitHub', href: 'https://github.com' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com' },
