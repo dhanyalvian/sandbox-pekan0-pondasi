@@ -11,8 +11,7 @@ export default function Home() {
   
   return (
     <div className={darkMode ? "bg-gray-900 text-white mx-auto min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]" : "bg-white text-gray-900 mx-auto min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]"}>
-      
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-4 right-4 group inline-block">
         <button
           onClick={() => toggleDarkMode(!darkMode)}
           className="p-2 rounded-full bg-blue-500 text-white shadow-xl hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center cursor-pointer"
@@ -22,7 +21,13 @@ export default function Home() {
             : <Sun size={20} className="text-white" />
           }
         </button>
+        
+        <div className="absolute top-1 right-12 transform hidden group-hover:block bg-gray-800 text-white text-xs rounded-full px-3 py-1.5 whitespace-nowrap z-10">
+          Toggle Dark Mode
+        </div>
       </div>
+      
+      
       
       <main className="flex flex-col row-start-2 justify-center items-center">
         <ProfilePicture />
