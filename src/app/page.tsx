@@ -22,8 +22,8 @@ export default function Home() {
           }
         </button>
         
-        <div className="absolute top-1 right-12 transform hidden group-hover:block bg-gray-800 text-white text-xs rounded-full px-3 py-1.5 whitespace-nowrap z-10">
-          Toggle Dark Mode
+        <div className="absolute top-1 right-12 transform hidden group-hover:block bg-gray-700 text-white text-xs rounded-full px-3 py-1.5 whitespace-nowrap z-10">
+          {darkMode ? "Dark" : "Light"}
         </div>
       </div>
       
