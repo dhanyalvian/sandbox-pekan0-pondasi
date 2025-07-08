@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function LinkList() {
+export default function LinkList(params: any) {
   const links = [
     { label: 'GitHub', href: 'https://github.com' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com' },
@@ -9,7 +9,7 @@ export default function LinkList() {
   ];
   
   return (
-    <ul role="list" className="divide-y divide-gray-100">
+    <ul role="list" className={params.darkMode ? "divide-y divide-neutral-800" : "divide-y divide-gray-100"}>
       {links.map(link => (
         <li key={link.href} className="flex justify-center gap-x-6 py-5">
           <Link href={link.href} className="rounded-full bg-sky-500 px-5 py-2 text-sm leading-5 font-semibold text-white hover:bg-sky-700">

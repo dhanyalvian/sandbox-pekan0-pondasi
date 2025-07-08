@@ -29,7 +29,7 @@ export default function Home() {
         
         <Bio />
         
-        <LinkList />
+        <LinkList darkMode={darkMode}/>
         
         <Copyright />
       </main>
